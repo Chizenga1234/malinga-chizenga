@@ -1,0 +1,73 @@
+<!DOCTYPE html >
+<html class="sign">
+    <head class="ty" style="text-align:center">CHIKWAWA</head>
+    <ol>
+    <form action="action_page.php" style="border:1px solid #ccc"> <div class="container"> <h1 class="signup">Sign Up</h1> <p class="fill">Be part of Chikwawa by signing in!!!</p> <hr>
+        <label for="psw"><b class="password">First Name</b></label> <input type="password" placeholder="Enter Firstname" name="psw" required>
+        <label for="psw"><b class="password">Surname</b></label> <input type="password" placeholder="Enter Lastname" name="psw" required>
+        <label for="psw"><b class="password">Village</b></label> <input type="password" placeholder="Enter Village" name="psw" required>
+        <label for="email"><b class="email" type="email" id="email">Email</b></label> <input type="text" placeholder="Enter Email" name="email" required class="enteremail">
+        <label for="psw"><b class="password" type="password" id="password">Password</b></label> <input type="password" placeholder="Enter Password" name="psw" required>
+        <label for="psw-repeat"><b class="repeat">Repeat Password</b></label> <input type="password" placeholder="Repeat Password" name="pswrepeat" required>
+        <label> <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me </label>
+        <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+        <div class="clearfix"> <button type="button" class="cancelbtn">Cancel</button> <button type="submit" class="signupbtn" onclick="auth()">Sign Up</button> </div> </div> </form>
+    </ol>
+    <script>
+        function auth(){
+            var email=document.getElementById("email").value;
+            var password=document.getElementById("password").value;
+            if(email=="adam.chizenga@outlook.com" && password=="lilian"){
+                window.Location.assign("chizenga.html");
+                alert("Log in Successfully");
+            }
+        }
+    </script>
+        </html>
+<style>
+    .sign{
+        box-sizing: border-box;
+        background-color:white;
+        text-align: center;
+        padding: 16px;
+        display: table;
+    }
+    .ty{
+        display: inline-block;
+        color: darkred;
+        text-align: center;
+        border: 1px solid #f1f1f1; 
+        
+    }
+    .signup{
+        display: inline-block;
+        color: blue;
+        font-style: italic;
+
+    }
+    .fill{
+        color: brown;
+        font-weight: lighter;
+    }
+    .email{
+        color: brown;
+        text-align: center;
+    }
+    .password{
+        color: brown;
+        text-align: center;
+    }
+    .repeat{
+        color: brown;
+        text-align: center;
+    }
+    .signupbtn{
+        color: darkgreen;
+        background-color:white;
+    }
+    .cancelbtn{
+        color: red;
+        background-color: white;
+    }
+    
+</style>
